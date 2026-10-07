@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UF2404 - Examen de Práctica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <div class="topbar-inner">
+        <a class="brand" href="index.html"><span class="brand-logo">OO</span><span class="brand-text">MF0227</span></a>
+        <nav class="tabs">
+            <a href="uf2404.html" class="active" aria-current="page">UF2404</a>
+            <a href="uf2405.html">UF2405</a>
+            <a href="uf2406.html">UF2406</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Cambiar tema"></button>
+    </div>
+</div>
+
+<header class="hero">
+    <div class="hero-inner">
+        <span class="eyebrow">UF2404 · Examen de práctica</span>
+        <h1>Principios de la programación orientada a objetos</h1>
+        <p>Clases, herencia, polimorfismo, encapsulamiento, sobrecarga de constructores y excepciones en Java.</p>
+        <div class="hero-meta"><span>10 preguntas test</span><span>5 apartados prácticos</span></div>
+    </div>
+</header>
+
+<main class="container">
+
+<nav class="toc">
+    <a href="#test">Test</a>
+    <a href="#caso">Caso práctico</a>
+</nav>
+
+<section id="test" class="questions">
+<div class="section-title"><h2>Preguntas tipo test</h2></div>
+
+<div class="question">
+    <h3>1. Si la clase Pedido contiene una lista de objetos LineaPedido, ¿qué tipo de relación existe entre ambas?</h3>
+    <button class="answer">Herencia (relación «es-un»)</button>
+    <button class="answer">Polimorfismo</button>
+    <button class="answer correct">Agregación/composición (relación «tiene-un»)</button>
+    <button class="answer">Sobrecarga</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>2. ¿Cuál de las siguientes opciones NO es uno de los tres pilares de la programación orientada a objetos?</h3>
+    <button class="answer">Herencia</button>
+    <button class="answer">Polimorfismo</button>
+    <button class="answer">Encapsulamiento</button>
+    <button class="answer correct">Compilación</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>3. En Java, ¿qué palabra clave se usa para que una clase implemente una interfaz?</h3>
+    <button class="answer">extends</button>
+    <button class="answer correct">implements</button>
+    <button class="answer">interface</button>
+    <button class="answer">super</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>4. ¿Qué representa la abstracción en POO?</h3>
+    <button class="answer correct">Modelar solo los aspectos relevantes de un objeto, ocultando los detalles innecesarios</button>
+    <button class="answer">Ejecutar varios métodos al mismo tiempo</button>
+    <button class="answer">Repetir el mismo código en varias clases</button>
+    <button class="answer">Convertir un objeto de un tipo a otro</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>5. ¿Cómo se denomina la redefinición de un método heredado en una subclase?</h3>
+    <button class="answer">Sobrecarga</button>
+    <button class="answer correct">Sobrescritura (override)</button>
+    <button class="answer">Composición</button>
+    <button class="answer">Instanciación</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>6. ¿Qué modificador de acceso permite que un atributo sea visible desde cualquier clase?</h3>
+    <button class="answer">private</button>
+    <button class="answer">protected</button>
+    <button class="answer correct">public</button>
+    <button class="answer">static</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>7. ¿Para qué sirve la palabra clave this usada como llamada dentro de un constructor?</h3>
+    <button class="answer">Para crear una nueva instancia de otra clase</button>
+    <button class="answer correct">Para invocar a otro constructor de la misma clase</button>
+    <button class="answer">Para declarar un atributo estático</button>
+    <button class="answer">Para invocar al constructor de la superclase</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>8. ¿Cómo se denomina tener en una clase varios métodos con el mismo nombre pero distinta lista de parámetros?</h3>
+    <button class="answer correct">Sobrecarga (overloading)</button>
+    <button class="answer">Sobrescritura (overriding)</button>
+    <button class="answer">Encapsulamiento</button>
+    <button class="answer">Composición</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>9. ¿Qué estructura de datos sigue el orden FIFO (el primero en entrar es el primero en salir)?</h3>
+    <button class="answer">Pila</button>
+    <button class="answer">Árbol</button>
+    <button class="answer correct">Cola</button>
+    <button class="answer">Lista enlazada</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>10. ¿Qué bloque de código se ejecuta siempre, se produzca o no una excepción?</h3>
+    <button class="answer">catch</button>
+    <button class="answer">try</button>
+    <button class="answer">throw</button>
+    <button class="answer correct">finally</button>
+    <div class="result"></div>
+</div>
+</section>
+
+<section id="caso" class="card">
+<div class="section-title"><h2>Caso práctico</h2><button type="button" class="btn btn-ghost" data-toggle-all>Mostrar todas</button></div>
+<div class="statement">
+<p>Se pide diseñar en Java un pequeño sistema de gestión de nóminas de una empresa.</p>
+</div>
+
+<div class="practice">
+<h3>Apartado 1 - Clase abstracta Empleado</h3>
+<p>Crea una clase abstracta <code>Empleado</code> con los atributos privados <code>nombre</code> (String), <code>dni</code> (String) y <code>salarioBase</code> (double), un constructor que los inicialice, sus métodos get/set y un método abstracto <code>calcularSalario()</code> que devuelva un double.</p>
+<button class="solution-btn">Ver solución</button>
+<div class="solution"><pre>
+public abstract class Empleado {
+    private String nombre;
+    private String dni;
+    private double salarioBase;
+
+    public Empleado(String nombre, String dni, double salarioBase) {
+        this.nombre = nombre;
+        this.dni = dni;
+        this.salarioBase = salarioBase;
+    }
+
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public String getDni() { return dni; }
+    public void setDni(String dni) { this.dni = dni; }
+    public double getSalarioBase() { return salarioBase; }
+    public void setSalarioBase(double salarioBase) { this.salarioBase = salarioBase; }
+
+    public abstract double calcularSalario();
+}
+</pre></div>
+</div>
+
+<div class="practice">
+<h3>Apartado 2 - Clases Gerente y Operario</h3>
+<p>Crea dos clases <code>Gerente</code> y <code>Operario</code> que hereden de <code>Empleado</code> (usando <code>super</code> en el constructor) y que sobrescriban <code>calcularSalario()</code>: Gerente = salarioBase + 20% de bonus, Operario = salarioBase sin bonus. Además, Gerente debe tener dos constructores: uno completo (nombre, dni, salarioBase) y otro reducido (nombre, dni) que asigne un salarioBase por defecto de 1500.0 reutilizando el constructor completo con <code>this(...)</code>.</p>
+<button class="solution-btn">Ver solución</button>
+<div class="solution"><pre>
+public class Gerente extends Empleado {
+    public Gerente(String nombre, String dni, double salarioBase) {
+        super(nombre, dni, salarioBase);
+    }
+
+    public Gerente(String nombre, String dni) {   // sobrecarga
+        this(nombre, dni, 1500.0);
+    }
+
+    @Override
+    public double calcularSalario() { return getSalarioBase() * 1.20; }
+}
+
+public class Operario extends Empleado {
+    public Operario(String nombre, String dni, double salarioBase) {
+        super(nombre, dni, salarioBase);
+    }
+
+    @Override
+    public double calcularSalario() { return getSalarioBase(); }
+}
+</pre></div>
+</div>
+
+<div class="practice">
+<h3>Apartado 3 - Sobrescribir toString()</h3>
+<p>Sobrescribe también el método <code>toString()</code> en ambas clases para mostrar nombre, salario base y salario calculado.</p>
+<button class="solution-btn">Ver solución</button>
+<div class="solution"><pre>
+// En Gerente
+@Override
+public String toString() {
+    return "Gerente: " + getNombre()
+         + " - Salario base: " + getSalarioBase() + " - Salario: " + calcularSalario();
+}
+
+// En Operario
+@Override
+public String toString() {
+    return "Operario: " + getNombre()
+         + " - Salario base: " + getSalarioBase() + " - Salario: " + calcularSalario();
+}
+</pre></div>
+</div>
+
+<div class="practice">
+<h3>Apartado 4 - Excepción propia y Empresa</h3>
+<p>Crea una excepción propia <code>SalarioInvalidoException</code> (que extienda Exception) y una clase <code>Empresa</code> con un atributo privado <code>ArrayList&lt;Empleado&gt;</code> (composición/agregación). Debe tener <code>contratar(Empleado e)</code>, que lanza la excepción si el salario base es ≤ 0, y <code>calcularNominaTotal()</code>, que recorre la lista sin comprobar el tipo concreto de cada empleado.</p>
+<button class="solution-btn">Ver solución</button>
+<div class="solution"><pre>
+public class SalarioInvalidoException extends Exception {
+    public SalarioInvalidoException(String mensaje) { super(mensaje); }
+}
+
+import java.util.ArrayList;
+
+public class Empresa {
+    private ArrayList&lt;Empleado&gt; empleados = new ArrayList&lt;&gt;();
+
+    public void contratar(Empleado e) throws SalarioInvalidoException {
+        if (e.getSalarioBase() &lt;= 0) {
+            throw new SalarioInvalidoException(
+                "salario no válido para " + e.getNombre());
+        }
+        empleados.add(e);
+    }
+
+    public double calcularNominaTotal() {
+        double total = 0;
+        for (Empleado e : empleados) {
+            total += e.calcularSalario();   // polimorfismo
+        }
+        return total;
+    }
+
+    public ArrayList&lt;Empleado&gt; getEmpleados() { return empleados; }
+}
+</pre></div>
+</div>
+
+<div class="practice">
+<h3>Apartado 5 - Método main</h3>
+<p>En un método main, crea una Empresa y añade un Gerente Laura (12345678A, 2500), un Operario Marcos (87654321B, 1200), un Gerente Sonia con el constructor reducido y un Operario Pedro con salario base -100. Captura la excepción con try/catch mostrando un mensaje de error, imprime después los empleados de la lista y, por último, la nómina total.</p>
+<button class="solution-btn">Ver solución</button>
+<div class="solution"><pre>
+public class Main {
+    public static void main(String[] args) {
+        Empresa empresa = new Empresa();
+        try {
+            empresa.contratar(new Gerente("Laura", "12345678A", 2500));
+            empresa.contratar(new Operario("Marcos", "87654321B", 1200));
+            empresa.contratar(new Gerente("Sonia", "11223344C"));
+            empresa.contratar(new Operario("Pedro", "99887766D", -100));
+        } catch (SalarioInvalidoException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+        for (Empleado e : empresa.getEmpleados()) {
+            System.out.println(e);
+        }
+        System.out.println("Nómina total: " + empresa.calcularNominaTotal());
+    }
+}
+
+/* Salida esperada:
+Error: salario no válido para Pedro
+Gerente: Laura - Salario base: 2500.0 - Salario: 3000.0
+Operario: Marcos - Salario base: 1200.0 - Salario: 1200.0
+Gerente: Sonia - Salario base: 1500.0 - Salario: 1800.0
+Nómina total: 6000.0
+*/
+</pre></div>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+    Creado por Alexandra Moltó Grau
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
