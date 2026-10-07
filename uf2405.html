@@ -40,11 +40,11 @@
 <div class="section-title"><h2>Preguntas tipo test</h2></div>
 
 <div class="question">
-    <h3>1. ¿Qué sentencia SQL se utiliza para eliminar filas de una tabla?</h3>
-    <button class="answer">UPDATE</button>
-    <button class="answer correct">DELETE</button>
-    <button class="answer">DROP</button>
-    <button class="answer">CREATE</button>
+    <h3>1. ¿Qué objeto de JDBC permite ejecutar sentencias SQL con parámetros de forma segura, evitando inyección SQL?</h3>
+    <button class="answer correct">PreparedStatement</button>
+    <button class="answer">ResultSet</button>
+    <button class="answer">Statement</button>
+    <button class="answer">Connection</button>
     <div class="result"></div>
 </div>
 
@@ -52,67 +52,13 @@
     <h3>2. ¿Qué instrucción permite eliminar una tabla completa de la base de datos?</h3>
     <button class="answer">DELETE TABLE</button>
     <button class="answer correct">DROP TABLE</button>
-    <button class="answer">REMOVE TABLE</button>
     <button class="answer">CLEAR TABLE</button>
+    <button class="answer">REMOVE TABLE</button>
     <div class="result"></div>
 </div>
 
 <div class="question">
-    <h3>3. ¿Qué tipo de clave se utiliza para relacionar una tabla con otra?</h3>
-    <button class="answer">Clave primaria</button>
-    <button class="answer">Índice</button>
-    <button class="answer correct">Clave foránea</button>
-    <button class="answer">Vista</button>
-    <div class="result"></div>
-</div>
-
-<div class="question">
-    <h3>4. ¿Qué lenguaje se utiliza normalmente para dar estilo visual a una página web?</h3>
-    <button class="answer">HTML</button>
-    <button class="answer">SQL</button>
-    <button class="answer correct">CSS</button>
-    <button class="answer">XML</button>
-    <div class="result"></div>
-</div>
-
-<div class="question">
-    <h3>5. ¿Qué protocolo cifra la comunicación entre cliente y servidor en la web?</h3>
-    <button class="answer">HTTP</button>
-    <button class="answer">FTP</button>
-    <button class="answer correct">HTTPS</button>
-    <button class="answer">SMTP</button>
-    <div class="result"></div>
-</div>
-
-<div class="question">
-    <h3>6. En una arquitectura de tres capas, ¿qué capa se encarga de la lógica de negocio?</h3>
-    <button class="answer">Presentación</button>
-    <button class="answer correct">Aplicación/Negocio</button>
-    <button class="answer">Datos</button>
-    <button class="answer">Red</button>
-    <div class="result"></div>
-</div>
-
-<div class="question">
-    <h3>7. ¿Qué objeto de JDBC permite ejecutar sentencias SQL con parámetros de forma segura, evitando inyección SQL?</h3>
-    <button class="answer">Statement</button>
-    <button class="answer">ResultSet</button>
-    <button class="answer correct">PreparedStatement</button>
-    <button class="answer">Connection</button>
-    <div class="result"></div>
-</div>
-
-<div class="question">
-    <h3>8. ¿Qué tecnología permite generar contenido dinámico en el servidor dentro de una aplicación web Java?</h3>
-    <button class="answer">HTML</button>
-    <button class="answer correct">Servlet/JSP</button>
-    <button class="answer">CSS</button>
-    <button class="answer">JavaScript</button>
-    <div class="result"></div>
-</div>
-
-<div class="question">
-    <h3>9. ¿Qué cláusula SQL se utiliza para agrupar filas y aplicar funciones de agregación?</h3>
+    <h3>3. ¿Qué cláusula SQL se utiliza para agrupar filas y aplicar funciones de agregación?</h3>
     <button class="answer">ORDER BY</button>
     <button class="answer">WHERE</button>
     <button class="answer correct">GROUP BY</button>
@@ -121,11 +67,65 @@
 </div>
 
 <div class="question">
-    <h3>10. ¿Qué método de un objeto Connection se utiliza para crear un objeto Statement?</h3>
+    <h3>4. ¿Qué lenguaje se utiliza normalmente para dar estilo visual a una página web?</h3>
+    <button class="answer">HTML</button>
+    <button class="answer">XML</button>
+    <button class="answer">SQL</button>
+    <button class="answer correct">CSS</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>5. ¿Qué sentencia SQL se utiliza para eliminar filas de una tabla?</h3>
+    <button class="answer">CREATE</button>
+    <button class="answer">UPDATE</button>
+    <button class="answer correct">DELETE</button>
+    <button class="answer">DROP</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>6. ¿Qué tecnología permite generar contenido dinámico en el servidor dentro de una aplicación web Java?</h3>
+    <button class="answer">HTML</button>
+    <button class="answer">CSS</button>
+    <button class="answer correct">Servlet/JSP</button>
+    <button class="answer">JavaScript</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>7. ¿Qué protocolo cifra la comunicación entre cliente y servidor en la web?</h3>
+    <button class="answer">HTTP</button>
+    <button class="answer">FTP</button>
+    <button class="answer correct">HTTPS</button>
+    <button class="answer">SMTP</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>8. ¿Qué método de un objeto Connection se utiliza para crear un objeto Statement?</h3>
     <button class="answer">getConnection()</button>
-    <button class="answer correct">createStatement()</button>
-    <button class="answer">prepareStatement()</button>
     <button class="answer">executeQuery()</button>
+    <button class="answer">prepareStatement()</button>
+    <button class="answer correct">createStatement()</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>9. ¿Qué tipo de clave se utiliza para relacionar una tabla con otra?</h3>
+    <button class="answer correct">Clave foránea</button>
+    <button class="answer">Vista</button>
+    <button class="answer">Índice</button>
+    <button class="answer">Clave primaria</button>
+    <div class="result"></div>
+</div>
+
+<div class="question">
+    <h3>10. En una arquitectura de tres capas, ¿qué capa se encarga de la lógica de negocio?</h3>
+    <button class="answer">Datos</button>
+    <button class="answer">Presentación</button>
+    <button class="answer">Red</button>
+    <button class="answer correct">Aplicación/Negocio</button>
     <div class="result"></div>
 </div>
 </section>
@@ -133,70 +133,72 @@
 <section id="caso" class="card">
 <div class="section-title"><h2>Caso práctico</h2><button type="button" class="btn btn-ghost" data-toggle-all>Mostrar todas</button></div>
 <div class="statement">
-<p>Se quiere diseñar la base de datos relacional de una tienda online y consultarla desde Java.</p>
+<p>Se quiere diseñar la base de datos relacional de un gimnasio y consultarla desde Java.</p>
 </div>
 
 <div class="practice">
 <h3>Apartado 1 - Creación de tablas</h3>
-<p>Escribe la sentencia CREATE TABLE para dos tablas: PRODUCTOS (id_producto INT clave primaria, nombre VARCHAR(100), precio DECIMAL(8,2), id_categoria INT clave foránea que referencia a CATEGORIAS) y CATEGORIAS (id_categoria INT clave primaria, nombre VARCHAR(50)).</p>
+<p>Escribe la sentencia CREATE TABLE para dos tablas: MONITORES (id_monitor INT clave primaria, nombre VARCHAR(50), especialidad VARCHAR(30)) y CLASES (id_clase INT clave primaria, nombre VARCHAR(100), horario VARCHAR(20), id_monitor INT clave foránea que referencia a MONITORES).</p>
 <button class="solution-btn">Ver solución</button>
 <div class="solution"><pre>
-CREATE TABLE CATEGORIAS (
-    id_categoria INT PRIMARY KEY,
-    nombre       VARCHAR(50)
+CREATE TABLE MONITORES (
+    id_monitor   INT PRIMARY KEY,
+    nombre       VARCHAR(50),
+    especialidad VARCHAR(30)
 );
 
-CREATE TABLE PRODUCTOS (
-    id_producto  INT PRIMARY KEY,
-    nombre       VARCHAR(100),
-    precio       DECIMAL(8,2),
-    id_categoria INT,
-    FOREIGN KEY (id_categoria) REFERENCES CATEGORIAS(id_categoria)
+CREATE TABLE CLASES (
+    id_clase   INT PRIMARY KEY,
+    nombre     VARCHAR(100),
+    horario    VARCHAR(20),
+    id_monitor INT,
+    FOREIGN KEY (id_monitor) REFERENCES MONITORES(id_monitor)
 );
 </pre></div>
 </div>
 
 <div class="practice">
 <h3>Apartado 2 - Inserción de datos</h3>
-<p>Escribe una sentencia INSERT que añada una categoría y una sentencia INSERT que añada un producto relacionado con esa categoría.</p>
+<p>Escribe una sentencia INSERT que añada un monitor y una sentencia INSERT que añada una clase impartida por ese monitor.</p>
 <button class="solution-btn">Ver solución</button>
 <div class="solution"><pre>
-INSERT INTO CATEGORIAS (id_categoria, nombre)
-VALUES (1, 'Informática');
+INSERT INTO MONITORES (id_monitor, nombre, especialidad)
+VALUES (1, 'Carlos', 'Spinning');
 
-INSERT INTO PRODUCTOS (id_producto, nombre, precio, id_categoria)
-VALUES (1, 'Portátil Dell', 799.99, 1);
+INSERT INTO CLASES (id_clase, nombre, horario, id_monitor)
+VALUES (1, 'Spinning', '09:00', 1);
 </pre></div>
 </div>
 
 <div class="practice">
-<h3>Apartado 3 - Consulta con INNER JOIN</h3>
-<p>Escribe una consulta SELECT que muestre el nombre de cada producto junto con el nombre de su categoría, combinando ambas tablas mediante un INNER JOIN.</p>
+<h3>Apartado 3 - Consulta con agregación</h3>
+<p>Escribe una consulta que muestre, para cada monitor, cuántas clases imparte (usa LEFT JOIN entre MONITORES y CLASES, agrupando por monitor con GROUP BY y contando con COUNT).</p>
 <button class="solution-btn">Ver solución</button>
 <div class="solution"><pre>
-SELECT p.nombre, c.nombre
-FROM PRODUCTOS p
-INNER JOIN CATEGORIAS c ON p.id_categoria = c.id_categoria;
+SELECT m.nombre, COUNT(c.id_clase) AS num_clases
+FROM MONITORES m
+LEFT JOIN CLASES c ON m.id_monitor = c.id_monitor
+GROUP BY m.nombre;
 </pre></div>
 </div>
 
 <div class="practice">
 <h3>Apartado 4 - UPDATE y DELETE</h3>
-<p>Escribe una sentencia UPDATE que cambie el precio de un producto concreto (identificado por su id_producto) y una sentencia DELETE que elimine los productos de una categoría concreta.</p>
+<p>Escribe una sentencia UPDATE que cambie el horario de una clase concreta (identificada por su id_clase) y una sentencia DELETE que elimine las clases de un monitor concreto.</p>
 <button class="solution-btn">Ver solución</button>
 <div class="solution"><pre>
-UPDATE PRODUCTOS
-SET precio = 649.99
-WHERE id_producto = 1;
+UPDATE CLASES
+SET horario = '19:30'
+WHERE id_clase = 1;
 
-DELETE FROM PRODUCTOS
-WHERE id_categoria = 1;
+DELETE FROM CLASES
+WHERE id_monitor = 1;
 </pre></div>
 </div>
 
 <div class="practice">
 <h3>Apartado 5 - Acceso con JDBC</h3>
-<p>Escribe en Java una clase <code>ProductoDAO</code> con un método <code>listarProductos()</code> que, usando JDBC, se conecte a <code>jdbc:mysql://localhost:3306/tienda</code> (usuario admin, contraseña admin123), ejecute la consulta del apartado 3 y muestre por consola cada producto con su categoría. Debe cerrar los recursos y tratar la excepción SQLException.</p>
+<p>Escribe en Java una clase <code>MonitorDAO</code> con un método <code>listarClasesPorMonitor()</code> que, usando JDBC, se conecte a <code>jdbc:mysql://localhost:3306/gimnasio</code> (usuario coach, contraseña gym2024), ejecute una consulta con INNER JOIN entre CLASES y MONITORES mostrando por consola el nombre de la clase, su horario y el nombre del monitor. Debe cerrar los recursos y tratar la excepción SQLException.</p>
 <button class="solution-btn">Ver solución</button>
 <div class="solution"><pre>
 import java.sql.Connection;
@@ -205,14 +207,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class ProductoDAO {
-    private static final String URL = "jdbc:mysql://localhost:3306/tienda";
-    private static final String USUARIO = "admin";
-    private static final String CLAVE = "admin123";
+public class MonitorDAO {
+    private static final String URL = "jdbc:mysql://localhost:3306/gimnasio";
+    private static final String USUARIO = "coach";
+    private static final String CLAVE = "gym2024";
 
-    public void listarProductos() {
-        String sql = "SELECT p.nombre, c.nombre "
-                   + "FROM PRODUCTOS p INNER JOIN CATEGORIAS c ON p.id_categoria = c.id_categoria";
+    public void listarClasesPorMonitor() {
+        String sql = "SELECT c.nombre, c.horario, m.nombre "
+                   + "FROM CLASES c INNER JOIN MONITORES m ON c.id_monitor = m.id_monitor";
 
         // try-with-resources: cierra ResultSet, Statement y Connection automáticamente
         try (Connection con = DriverManager.getConnection(URL, USUARIO, CLAVE);
@@ -220,7 +222,7 @@ public class ProductoDAO {
              ResultSet rs = st.executeQuery(sql)) {
 
             while (rs.next()) {
-                System.out.println(rs.getString(1) + " - " + rs.getString(2));
+                System.out.println(rs.getString(1) + " (" + rs.getString(2) + ") - " + rs.getString(3));
             }
         } catch (SQLException e) {
             System.out.println("Error de base de datos: " + e.getMessage());
@@ -229,8 +231,8 @@ public class ProductoDAO {
 }
 
 /* Salida esperada:
-Portátil Dell - Informática
-Monitor LG - Informática
+Spinning (09:00) - Carlos
+Yoga (18:00) - Laura
 */
 </pre></div>
 </div>
