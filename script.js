@@ -222,6 +222,7 @@ function crearPanelNota(){
         <div id="score-text"></div>
         <div class="score-actions">
             <button type="button" class="btn btn-ghost" data-action="next">Siguiente</button>
+            <button type="button" class="btn btn-ghost" data-action="correctas">Ver respuestas correctas</button>
             <button type="button" class="btn btn-ghost" data-action="reset">Reiniciar</button>
         </div>
     `;
@@ -230,6 +231,7 @@ function crearPanelNota(){
 
     panel.querySelector('[data-action="next"]').addEventListener("click", irASiguientePendiente);
     panel.querySelector('[data-action="reset"]').addEventListener("click", reiniciarTest);
+    panel.querySelector('[data-action="correctas"]').addEventListener("click", e => toggleRespuestasCorrectas(e.currentTarget));
 
     actualizarNota();
 
