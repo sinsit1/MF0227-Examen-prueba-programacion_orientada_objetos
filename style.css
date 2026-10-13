@@ -825,7 +825,7 @@ tr:last-child td{
     padding:16px 18px;
     border-radius:var(--radius);
     box-shadow:var(--shadow-lg);
-    width:230px;
+    width:250px;
     z-index:999;
 }
 
@@ -878,6 +878,7 @@ tr:last-child td{
 
 #score-panel .score-actions{
     display:flex;
+    flex-wrap:wrap;
     gap:8px;
     margin-top:10px;
 }
@@ -888,6 +889,10 @@ tr:last-child td{
     padding:7px 10px;
     font-size:.82rem;
     justify-content:center;
+}
+
+#score-panel .score-actions button[data-action="correctas"]{
+    flex-basis:100%;
 }
 
 /* =========================

@@ -185,6 +185,31 @@ function reiniciarTest(){
 
 }
 
+let mostrandoCorrectas = false;
+
+function toggleRespuestasCorrectas(btn){
+
+    mostrandoCorrectas = !mostrandoCorrectas;
+
+    questions.forEach(question => {
+
+        if(question.classList.contains("answered")){
+            return; // ya se muestra la correcta tras responder
+        }
+
+        const correcta = question.querySelector(".answer.correct");
+
+        if(correcta){
+            correcta.classList.toggle("show-correct", mostrandoCorrectas);
+        }
+
+    });
+
+    btn.textContent = mostrandoCorrectas ? "Ocultar respuestas correctas" : "Ver respuestas correctas";
+    btn.setAttribute("aria-pressed", String(mostrandoCorrectas));
+
+}
+
 function irASiguientePendiente(){
 
     const pendiente = questions.find(q => !q.classList.contains("answered"));
@@ -221,8 +246,8 @@ function crearPanelNota(){
         </div>
         <div id="score-text"></div>
         <div class="score-actions">
-            <button type="button" class="btn btn-ghost" data-action="next">Siguiente</button>
             <button type="button" class="btn btn-ghost" data-action="correctas">Ver respuestas correctas</button>
+            <button type="button" class="btn btn-ghost" data-action="next">Siguiente</button>
             <button type="button" class="btn btn-ghost" data-action="reset">Reiniciar</button>
         </div>
     `;
